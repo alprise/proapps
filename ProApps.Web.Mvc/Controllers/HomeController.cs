@@ -8,6 +8,16 @@ namespace ProApps.Web.Mvc.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Demos()
+        {
+            return View();
+        }
+
+        public ActionResult CV()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
