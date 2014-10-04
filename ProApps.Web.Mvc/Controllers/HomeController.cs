@@ -18,6 +18,12 @@ namespace ProApps.Web.Mvc.Controllers
             return View();
         }
 
+        public ActionResult GermanCV()
+        {
+            return View();
+        }
+
+
         public ActionResult Index()
         {
             return View();
@@ -25,7 +31,7 @@ namespace ProApps.Web.Mvc.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            
 
             return View();
         }

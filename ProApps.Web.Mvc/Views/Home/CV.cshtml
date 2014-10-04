@@ -3,7 +3,7 @@
     ViewBag.Title = "CV";
 }
 
-<h4>Curriculum Vitae</h4>
+<h4>Curriculum Vitae (<a href="@Url.Action("GermanCV")" class=".hidden-print">german version here</a>)</h4>
 
 <div class="row">
     <div class="col-xs-4">
@@ -35,7 +35,7 @@
 </div>
 <div class="row">
     <div class="col-xs-4">
-        <h5>January 2012 - present</h5>
+        <h5>January 2012 - </h5>
     </div>
     <div class="col-xs-8">
         <h6><strong> .NET Software Engineer </strong></h6>
@@ -161,7 +161,7 @@
         </address>
         <ul class="list-unstyled">
             <li>- Computer programming;</li>
-            <li>- Algorithms;</li>
+            <li>- Algorithms and data structures;</li>
             <li>- Databases;
             </li>
         </ul>
@@ -180,6 +180,7 @@
         </address>
         <ul class="list-unstyled">
             <li>- Computer programming;</li>
+            <li>- Algorithms and data structures;</li>
         </ul>
     </div>
 </div>
@@ -187,6 +188,49 @@
 <div class="row">
     <div class="col-xs-12">
         <h5><strong> PERSONAL SKILLS </strong></h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-4">
+        <h5>Mother tongue</h5>
+    </div>
+    <div class="col-xs-8">
+        <ul class="list-unstyled">
+            <li><strong>Romanian</strong></li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-4">
+        <h5>Other languages</h5>
+    </div>
+    <div class="col-xs-8">
+        <ul class="list-unstyled">
+            <li><strong>English</strong></li>
+            <li>
+                <ul class="list-inline">
+                    <li>Understanding: C1</li>
+                    <li>Speaking: C1</li>
+                    <li>Writing: C1</li>
+                </ul>
+            </li>
+            <li><strong>German</strong></li>
+            <li>
+                <ul class="list-inline">
+                    <li>Understanding: C1</li>
+                    <li>Speaking: C1</li>
+                    <li>Writing: C1</li>
+                </ul>
+            </li>
+            <li><strong>French</strong></li>
+            <li>
+                <ul class="list-inline">
+                    <li>Understanding: C1</li>
+                    <li>Speaking: B2/C1</li>
+                    <li>Writing: B2</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="row">
@@ -213,6 +257,8 @@
             <li>- .NET Controls: KendoUI, DeveloperExpress DXperience v2010 vol 1;</li>
             <li>- Technologies / Frameworks: ASP.NET MVC 3.0-5.0, ASP.NET Web Forms, Windows Forms, AJAX, Kendo UI,
 jQuery, Javascript, TypeScript, XML, XSL, HTML, CSS, Entity Framework, ADO.NET, Big Data;</li>
+            <li>- Revision Control Systems: Git, TFS, SVN;</li>
+            <li>- Software Development Process: SCRUM, Kanban;</li>
             <li>- Good knowledge of design patterns and object-oriented programming;</li>
             <li>- MCTS certified (".NET Framework 2.0 Web Applications");</li>
         </ul>
@@ -239,3 +285,6 @@ jQuery, Javascript, TypeScript, XML, XSL, HTML, CSS, Entity Framework, ADO.NET, 
         </ul>
     </div>
 </div>
+@section Scripts {
+    @Scripts.Render("~/bundles/analytics")
+}
