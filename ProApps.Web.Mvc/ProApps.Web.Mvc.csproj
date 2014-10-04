@@ -232,7 +232,6 @@
     <Content Include="Views\Home\CV.cshtml" />
     <Content Include="Views\Home\Demos.cshtml" />
     <Content Include="Views\Home\GermanCV.cshtml" />
-    <Content Include="Views\Shared\_GoogleAnalytics.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
