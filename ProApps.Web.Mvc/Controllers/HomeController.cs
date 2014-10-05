@@ -23,6 +23,11 @@ namespace ProApps.Web.Mvc.Controllers
             return View();
         }
 
+        public ActionResult GermanCL()
+        {
+            return View();
+        }
+
 
         public ActionResult Index()
         {
