@@ -1,7 +1,22 @@
-﻿
+﻿@model IEnumerable<int>
 @{
     ViewBag.Title = "Demos";
 }
 
-<h2>Under construction</h2>
+<h2>1. ASP.NET MVC server side paging with scroll</h2>
+@foreach (var item in Model)
+{
+    <h2 id="Chapter@(item)">Chapter@(item)</h2>
 
+}
+
+@Html.ActionLink(
+    "Next 8",
+    "Demos",
+    "Home",
+    null,
+    null,
+                    "Chapter" + Model.Count().ToString(),
+            new { totalItems = Model.Count() + 8 },
+    null
+)

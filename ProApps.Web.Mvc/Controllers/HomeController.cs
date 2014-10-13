@@ -8,9 +8,15 @@ namespace ProApps.Web.Mvc.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Demos()
+        public ActionResult Demos(int? totalItems = 8)
         {
-            return View();
+            if (totalItems.HasValue && totalItems.Value > 100)
+            {
+                totalItems = 100;
+            }
+            var model = Enumerable.Range(1, totalItems.Value);
+
+            return View(model);
         }
 
         public ActionResult CV()
